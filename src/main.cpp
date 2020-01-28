@@ -37,9 +37,21 @@ int main(int argc, char *argv[]) {
   /**
    * TODO: Initialize the pid variable.
    */
-    double init_Kp = atof(argv[1]);
-    double init_Ki = atof(argv[2]);
-    double init_Kd = atof(argv[3]);
+    	double init_Kp ;
+    	double init_Ki ;
+    	double init_Kd ;
+    if (argc > 1) {
+    	init_Kp = atof(argv[1]);
+    	init_Ki = atof(argv[2]);
+    	init_Kd = atof(argv[3]);
+    } else {
+    	init_Kp = -1;
+    	init_Ki = 0;
+    	init_Kd =-1;
+        
+        std::cout << "Using default parameters (P,I,D) = [" << init_Kp << "," << init_Ki  << "," << init_Kd << "]" << std::endl; 
+
+    } 
     pid.Init(init_Kp, init_Ki, init_Kd);
 
   h.onMessage([&pid](uWS::WebSocket<uWS::SERVER> ws, char *data, size_t length, 
