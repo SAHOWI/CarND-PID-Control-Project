@@ -49,7 +49,10 @@ For Step #5 before and for the next steps you must be in the GPU mode of the env
 
 Run the Simulator and choose the PID Simulator.
 Using the right arrow, you need to go to the "PID Controller" project!
-![Simulator PID Controller](images/Simulator PID Controller.png) 
+
+![Simulator PID controller project](./images/Simulator_PID_Controller.png)
+
+Click the "Select" button, and the car starts driving. You will see the debugging information on the PID controller terminal. 
 
 As the default parameters are use, the result will be bad and not acceptable for a real car, as can bee seen in this Video:
 [![Failed Run](http://img.youtube.com/vi/DxWku4wbNKk/0.jpg)](http://www.youtube.com/watch?v=DxWku4wbNKk "Failed Run")
@@ -64,11 +67,7 @@ Again you need the right arro to go to the "PID Controller" project!
 
 [![Successful Run](http://img.youtube.com/vi/5-FI0BBsW5g/0.jpg)](http://www.youtube.com/watch?v=5-FI0BBsW5g "Sucesful Run")
 
-Using the right arrow, you need to go to the Project 4: PID Controller project:
 
-![Simulator PID controller project](./images/Simulator_PID_Controller.png)
-
-Click the "Select" button, and the car starts driving. You will see the debugging information on the PID controller terminal. 
 
 # [Rubric Points](https://review.udacity.com/#!/rubrics/824/view) 
 
@@ -97,10 +96,32 @@ The [PID::UpdateError](./src/PID.cpp#L24) method calculates proportional, integr
 
 ### Describe how the final hyperparameters were chosen.
 
-The parameters were chosen manually by try and error. First, make sure the car can drive straight with zero as parameters. Then add the proportional and the car start going on following the road but it starts overshooting go out of it. Then add the differential to try to overcome the overshooting. The integral part only moved the car out of the road; so, it stayed as zero. After the car drove the track without going out of it, the parameters increased to minimize the average cross-track error on a single track lap. The final parameters where [P: -0.1, I: 0.0, D: -0.8].
+The parameters were chosen manually by try and error. First, make sure the car can drive straight with zero as parameters.
+You would accomplish that with my implementation executing `./pid 0 0 0 `
+
+Then add the proportional and the car start going on following the road but it starts overshooting go out of it. Then add the differential to try to overcome the overshooting. The integral part only moved the car out of the road; so, it stayed as zero. After the car drove the track without going out of it, the parameters increased/decresaed to minimize the average cross-track error on a single track lap. My final parameters where [P: -0.1, I: 0.0, D: -0.8].
 
 ## Simulation
 
 ### The vehicle must successfully drive a lap around the track.
 
 Running the track with good parameters is shown [here](https://youtu.be/5-FI0BBsW5g).
+
+
+## Tools used
+### Development
+
+The full development was done using a Ubuntu Bash in a Windows Subsystem for Linux ("WSL") on a Win10 Laptop.
+The enviroment has been build up according to the provided FAQ Video
+
+### Execution and Video Capture
+
+The execution was don in the Udacity provided Workspace in GPU mode, the screen recording was done using Apple Quicktime.
+The resulting video have been uploaded to Youtube.
+
+### Link creation
+
+Embeddign videos manually in Markdown Files is quite anoying peace of work, therefore I used http://embedyoutube.org/ to create a MD snippet containing the link and a preview image.
+
+
+
