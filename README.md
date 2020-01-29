@@ -44,7 +44,7 @@ Fellow students have put together a guide to Windows set-up for the project [her
 For Step #5 before and for the next steps you must be in the GPU mode of the environment if you are in the UDACITY Workspace! 
 
 
-![run default](images/run_default.png)
+![run default](./images/run_default.png)
 
 Run the Simulator and choose the PID Simulator.
 ![Simulator PID Controller](images/Simulator PID Controller.png) 
@@ -53,13 +53,13 @@ As the default parameters are use, the result will be bad and not acceptable for
 ![failed run](https://youtu.be/DxWku4wbNKk)
 
 Stop the Simulator by hitting ESC (this will stop 
-![run tuned](images/run_tuned.png)
+![run tuned](./images/run_tuned.png)
 
-![run optimized] (https://youtu.be/5-FI0BBsW5g)
+![tuned run](https://youtu.be/5-FI0BBsW5g)
 
 Using the right arrow, you need to go to the Project 4: PID Controller project:
 
-![Simulator PID controller project](images/Simulator PID Controller.png)
+![Simulator PID controller project](./images/Simulator_PID_Controller.png)
 
 Click the "Select" button, and the car starts driving. You will see the debugging information on the PID controller terminal. 
 
