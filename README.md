@@ -50,7 +50,7 @@ Run the Simulator and choose the PID Simulator.
 ![Simulator PID Controller](images/Simulator PID Controller.png) 
 
 As the default parameters are use, the result will be bad and not acceptable for a real car, as can bee seen in this Video:
-[failed run (https://youtu.be/DxWku4wbNKk)
+![failed run](https://youtu.be/DxWku4wbNKk)
 
 Stop the Simulator by hitting ESC (this will stop 
 ![run tuned](images/run_tuned.png)
