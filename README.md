@@ -59,11 +59,11 @@ Stop the Simulator by hitting ESC (this will stop
 
 Using the right arrow, you need to go to the Project 4: PID Controller project:
 
-![Simulator PID controller project](images/simulator_PID_Controller.png)
+![Simulator PID controller project](images/Simulator PID Controller.png)
 
 Click the "Select" button, and the car starts driving. You will see the debugging information on the PID controller terminal. 
 
-# [Rubric](https://review.udacity.com/#!/rubrics/824/view) points
+# [Rubric Points](https://review.udacity.com/#!/rubrics/824/view) 
 
 ## Compilation
 
