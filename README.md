@@ -46,16 +46,23 @@ For Step #5 before and for the next steps you must be in the GPU mode of the env
 
 ![run default](./images/run_default.png)
 
+
 Run the Simulator and choose the PID Simulator.
+Using the right arrow, you need to go to the "PID Controller" project!
 ![Simulator PID Controller](images/Simulator PID Controller.png) 
 
 As the default parameters are use, the result will be bad and not acceptable for a real car, as can bee seen in this Video:
-[![failed run](http://img.youtube.com/vi/DxWku4wbNKk/0.jpg)](https://www.youtube.com/watch?v=DxWku4wbNKk "Failed Run")
+[![Failed Run](http://img.youtube.com/vi/DxWku4wbNKk/0.jpg)](http://www.youtube.com/watch?v=DxWku4wbNKk "Failed Run")
 
-Stop the Simulator by hitting ESC (this will stop 
+Stop the Simulator by hitting ESC (this will stop the current run and will bring the Simulator to the initial Screen)
+
+Run again with optimized parameter: `./pid -0.1 0 -0.8` :
+
 ![run tuned](./images/run_tuned.png)
 
-![tuned run](https://youtu.be/5-FI0BBsW5g)
+Again you need the right arro to go to the "PID Controller" project!
+
+[![Successful Run](http://img.youtube.com/vi/5-FI0BBsW5g/0.jpg)](http://www.youtube.com/watch?v=5-FI0BBsW5g "Sucesful Run")
 
 Using the right arrow, you need to go to the Project 4: PID Controller project:
 
